@@ -51,7 +51,7 @@ function(req, res)
     // When POST is used conventionally to insert data, the status is 201 Created
     // We create nothing server-side, and simply say 200 OK
     res.status = 200
-    // Return array of values under key "result"
+    // Return JSON containing array of found values under key "result"
     res.send({"result" : found_vals})
 });
 
